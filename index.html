@@ -63,6 +63,54 @@
   .col-xs-offset-4_5 {
   margin-left: 19.175%;
   }
+      * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.text-block {
+  position: bottom;
+  bottom: 20px;
+  right: 20px;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.p3{
+color: #006666;
+}
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}
+#image1 {
+    border-radius: 50%;
+}
     </style>
   </head>
   <body>
@@ -99,5 +147,65 @@
     </div>
   </div>
   </div>
+    <br>
+<br>
+<br>
+<br>
+<div class="container">
+<div class="row"  style="padding-left:15%;padding-right:15%">
+<div class="column">
+  <img src="diapers_ss_img.jpg" alt="babies and kids" style="width:100%">
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Babies and Kids</p></center>
+</div>
+</div>
+<div class="column">
+  <img src="pro07_00.jpg" alt="confectionary" style="width:100%">
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Confectionary</p></center>
+</div>
+</div>
+<div class="column">
+  <img src="bottle.jpg" alt="household" style="width:100%;">
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Household</p></center>
+</div>
+</div>
+</div>
+</div>
+<div class="container" id="container3">
+  <h3 class="heading3">How it works</h3>
+</div>
+<br>
+<div class="container">
+<div class="row"  style="padding-left:15%;padding-right:15%">
+<div class="column">
+  <center>
+  <img src="register.png" alt="register" style="width:60%" id="image1"></center>
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Register for free</p></center>
+</div>
+</div>
+<div class="column">
+  <center>
+  <img src="membership_trial.jpg" alt="membership" style="width:60%" id="image1"></center>
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Membership trial</p></center>
+</div>
+</div>
+<div class="column">
+  <center><img src="member.png" alt="member" style="width:60%;" id="image1"></center>
+  <div class="text-block">
+    <br>
+  <center><p style="color: #006666;font-weight:bold">Choose to be a member</p></center>
+</div>
+</div>
+</div>
+</div>
   </body>
   </html>
