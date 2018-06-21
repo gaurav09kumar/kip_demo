@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -12,6 +13,27 @@
     background-color: #33cccc;
     padding: 10px;
   }
+  .demo:link {
+    color: #006666;
+    background-color: transparent;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 17px;
+}
+.demo:hover {
+    color: green;
+    background-color: transparent;
+}
+.demo1:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 14px;
+}
+.demo1:hover {
+  color:#006666 ;
+  background-color: transparent;
+}
   .navbar-brand{
     color: white;
     font-weight: bold;
@@ -116,6 +138,86 @@ clear: both;
   padding-top: 6%;
   font-size: 19px;
 
+}
+form.example input[type=text] {
+    padding: 12px;
+    font-size: 14px;
+    border: 1px white;
+    float: left;
+    width: 80%;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #006666;
+    color: white;
+    font-size: 17px;
+    border: 1px #006666;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+form.example button:hover {
+    background: #00b36b;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.para2{
+  color: black;
+  text-align: center;
+  padding-top: 2%;
+font-weight: bold;
+}
+.heading5{
+color: #003300;
+font-weight: bold;
+}
+.demo:link {
+color: white;
+background-color: transparent;
+text-decoration: none;
+font-size: 15px;
+}
+.demo:hover {
+color: #003300;
+background-color: transparent;
+}
+.fa {
+padding: 14px;
+font-size:9px;
+width: 6px;
+text-decoration: none;
+text-align:center;
+border: 2px solid white;
+border-radius: 50%;
+}
+
+.fa:hover {
+opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3399ff;
+color: white;
+}
+
+.fa-twitter {
+background: #3399ff;
+color: white;
+}
+
+.fa-instagram {
+background: #3399ff;
+color: white;
 }
   </style>
 </head>
@@ -259,6 +361,57 @@ clear: both;
     </div>
   </div>
   </div>
+  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px;padding-top:2%;">
+<input  type="text" placeholder="or enter email address" name="search1">
+<button type="submit">GO</button>
+</form>
+<br>
+<center>
+<a class ="demo"href="#" target="_blank" style="color:#006666">Sign In</a>
+<a class="demo" href="#" target="_blank" style="padding-left:3%;color:#006666">Shop for Business</a>
+</center>
+<p class="para2">We guarantee 100% privacy! Your info will not be shared.</p>
+<br>
+<br>
+<br>
+</div>
+<div class="container-fluid" style="background-color:#3399ff">
+  <div class="row" style="padding-top:4%">
+  <div class="col-sm-8">
+  <div class="row">
+  <div class="col-sm-3"><h3 class="heading5">Company</h3>
+    <a class ="demo1"href="#" target="_blank" style="color: white">Products</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">How Kipos work</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank"style="color: white">About Us</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">Join the team</a></div>
+  <div class="col-sm-3"><h3 class="heading5">Resources</h3>
+    <a class ="demo1"href="#" target="_blank" style="color: white">Contact Us</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">FAQ</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">In The Media</a>
+  </div>
+  <div class="col-sm-3"><h3 class="heading5">Quick Links</h3>
+    <a class ="demo1"href="#" target="_blank" style="color: white">Terms and Conditions</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">Return Policy</a>
+  <br>
+  <a class ="demo1"href="#" target="_blank" style="color: white">Affiliates</a></div>
+  <div class="col-sm-3"><h3 class="heading5">Get Social</h3><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a>
+</div>
+</div></div>
+  <div class="col-sm-4">
+  <div class="row">
+  <div class="col-sm-4" style="background-color:red">.col-sm-4</div>
+  <div class="col-sm-4" style="background-color:brown">.col-sm-4</div>
+  <div class="col-sm-4" style="background-color:grey">.col-sm-4</div>
+</div></div>
+</div>
 </div>
 </body>
 </html>
