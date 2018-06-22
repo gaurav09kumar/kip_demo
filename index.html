@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Kipos Grocery</title>
   <meta charset="utf-8">
@@ -9,413 +10,500 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
-  .navbar{
-    background-color: #33cccc;
-    padding: 10px;
-  }
-  .demo:link {
-    color: #006666;
-    background-color: transparent;
-    text-decoration: none;
-    font-weight:bold;
-    font-size: 17px;
-}
-.demo:hover {
-    color: green;
-    background-color: transparent;
-}
-.demo1:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-  font-size: 14px;
-}
-.demo1:hover {
-  color:#006666 ;
-  background-color: transparent;
-}
-  .navbar-brand{
-    color: white;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 25px;
-  }
-  .myDiv{
-    background-color: #33cccc;
-  }
-  #button1{
-    background-color: #ff33ff;
-    color: white;
-    border-width: 2px;
-    border-color: #ff33ff;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  #button2{
-    background-color: #33cccc;
-    color: white;
-    border-width: 1.5px;
-    border-color: white;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  .heading1{
-    color:  #006666;
-    font-size: 50px;
-  }
-  #button3{
-    color: white;
-    font-weight: bold;
-    background-color: #33cccc;
-  }
-  .heading3{
-    color: #006666;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 6%;
-  }
-  #container3{
-    text-align: justify; /* For Edge */
-    -moz-text-align-last: center; /* For Firefox prior 58.0 */
-    text-align-last: center;
-}
-#center11{
-  font-weight: bold;
-}
-.col-xs-offset-4_5 {
-margin-left: 19.175%;
-}
+    .navbar {
+      background-color: #33cccc;
+      padding: 10px;
+    }
+
+    .demo:link {
+      color: #006666;
+      background-color: transparent;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .demo:hover {
+      color: green;
+      background-color: transparent;
+    }
+
+    .demo1:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .demo1:hover {
+      color: #006666;
+      background-color: transparent;
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 25px;
+    }
+
+    .myDiv {
+      background-color: #33cccc;
+    }
+
+    #button1 {
+      background-color: #ff33ff;
+      color: white;
+      border-width: 2px;
+      border-color: #ff33ff;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    #button2 {
+      background-color: #33cccc;
+      color: white;
+      border-width: 1.5px;
+      border-color: white;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .heading1 {
+      color: #006666;
+      font-size: 50px;
+    }
+
+    #button3 {
+      color: white;
+      font-weight: bold;
+      background-color: #33cccc;
+    }
+
+    .heading3 {
+      color: #006666;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 6%;
+    }
+
+    #container3 {
+      text-align: justify;
+      /* For Edge */
+      -moz-text-align-last: center;
+      /* For Firefox prior 58.0 */
+      text-align-last: center;
+    }
+
+    #center11 {
+      font-weight: bold;
+    }
+
+    .col-xs-offset-4_5 {
+      margin-left: 19.175%;
+    }
+
     * {
-box-sizing: border-box;
-}
-.column {
-float: left;
-width: 33.33%;
-padding: 5px;
-}
-/* Clearfix (clear floats) */
-.row::after {
-content: "";
-clear: both;
-display: table;
-}
-.text-block {
-position: bottom;
-bottom: 20px;
-right: 20px;
-color: black;
-padding-left: 20px;
-padding-right: 20px;
-}
-.p3{
-color: #006666;
-}
-* {
-box-sizing: border-box;
-}
-.column {
-float: left;
-width: 33.33%;
-padding: 10px;
-}
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-@media screen and (max-width: 600px) {
-.column {
-    width: 100%;
-}
-}
-#image1 {
-  border-radius: 50%;
-}
-#center12{
-  color: #006666;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 6%;
-  font-size: 19px;
+      box-sizing: border-box;
+    }
 
-}
-form.example input[type=text] {
-    padding: 12px;
-    font-size: 14px;
-    border: 1px white;
-    float: left;
-    width: 80%;
-    border-radius: 8px;
-    background: #ffffff;
-}
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
-form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #006666;
-    color: white;
-    font-size: 17px;
-    border: 1px #006666;
-    border-left: none;
-    cursor: pointer;
-    border-radius: 8px;
-}
+    /* Clearfix (clear floats) */
 
-form.example button:hover {
-    background: #00b36b;
-}
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-.para2{
-  color: black;
-  text-align: center;
-  padding-top: 2%;
-font-weight: bold;
-}
-.heading5{
-color: #003366;
-font-weight: bold;
-}
-.demo:link {
-color: white;
-background-color: transparent;
-text-decoration: none;
-font-size: 15px;
-}
-.demo:hover {
-color: #003300;
-background-color: transparent;
-}
-.fa {
-padding: 14px;
-font-size:9px;
-width: 6px;
-text-decoration: none;
-text-align:center;
-border: 2px solid white;
-border-radius: 50%;
-}
+    .text-block {
+      position: bottom;
+      bottom: 20px;
+      right: 20px;
+      color: black;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-.fa:hover {
-opacity: 0.7;
-}
+    .p3 {
+      color: #006666;
+    }
 
-.fa-facebook {
-background: #33cccc;
-color: white;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-.fa-twitter {
-background: #33cccc;
-color: white;
-}
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 10px;
+    }
 
-.fa-instagram {
-background: #33cccc;
-color: white;
-}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+
+    #image1 {
+      border-radius: 50%;
+    }
+
+    #center12 {
+      color: #006666;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 6%;
+      font-size: 19px;
+
+    }
+
+    form.example input[type=text] {
+      padding: 12px;
+      font-size: 14px;
+      border: 1px white;
+      float: left;
+      width: 80%;
+      border-radius: 8px;
+      background: #ffffff;
+    }
+
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #006666;
+      color: white;
+      font-size: 17px;
+      border: 1px #006666;
+      border-left: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+
+    form.example button:hover {
+      background: #00b36b;
+    }
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    .para2 {
+      color: black;
+      text-align: center;
+      padding-top: 2%;
+      font-weight: bold;
+    }
+
+    .heading5 {
+      color: #003366;
+      font-weight: bold;
+    }
+
+    .demo:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .demo:hover {
+      color: #003300;
+      background-color: transparent;
+    }
+
+    .fa {
+      padding: 14px;
+      font-size: 9px;
+      width: 6px;
+      text-decoration: none;
+      text-align: center;
+      border: 2px solid white;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #33cccc;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #33cccc;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #33cccc;
+      color: white;
+    }
   </style>
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">KIPOS</a>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">KIPOS</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <div class='myDiv'>
+          <button style='margin-right:16px' class="btn btn-default" id="button1">SignUp</button>
+          <button style='margin-right:16px' class="btn btn-default" id="button2">Log In</button>
+        </div>
+      </ul>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <div class='myDiv'>
-    <button style='margin-right:16px' class="btn btn-default" id="button1">SignUp</button>
-    <button style='margin-right:16px' class="btn btn-default" id="button2">Log In</button>
-  </div>
-    </ul>
-  </div>
-</nav>
+  </nav>
 
-<div class="container">
-  <br>
-  <br>
-  <br>
-  <br>
-  <h1 class="heading1">Kipos<br>Grocery</h1>
-  <br>
-  <br>
-  <button class="btn btn-lg-default" id="button3">SHOP NOW</button>
-</div>
-<div class="container" id="container3">
-  <h3 class="heading3">Mission Statement</h3>
-  <div class="col-xs-12">
-  <div class="row">
-    <div class="col-xs-7 col-xs-offset-4_5" id="center11">A customer service driven ecosystem an a learning platform where customers can grow and develop their healthy healthy lifestyle goals easily,affordably and sustainably.</div>
+  <div class="container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="heading1">Kipos
+      <br>Grocery</h1>
+    <br>
+    <br>
+    <button class="btn btn-lg-default" id="button3">SHOP NOW</button>
   </div>
-</div>
-</div>
-  <br>
-<br>
-<br>
-<br><div class="container">
-<div class="row"  style="padding-left:15%;padding-right:15%">
-<div class="column">
-<img src="diapers_ss_img.jpg" alt="babies and kids" style="width:100%">
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Babies and Kids</p></center>
-</div>
-</div>
-<div class="column">
-<img src="pro07_00.jpg" alt="confectionary" style="width:100%">
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Confectionary</p></center>
-</div>
-</div>
-<div class="column">
-<img src="bottle.jpg" alt="household" style="width:100%;">
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Household</p></center>
-</div>
-</div>
-</div>
-</div>
-<div class="container" id="container3">
-<h3 class="heading3">How it works</h3>
-</div>
-<br>
-<div class="container">
-<div class="row"  style="padding-left:15%;padding-right:15%">
-<div class="column">
-<center>
-<img src="register.png" alt="register" style="width:60%" id="image1"></center>
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Register for free</p></center>
-<center><p style="color: #4d4d33;font-size:15px">Free to browse on the product catalog</p></center>
-</div>
-</div>
-<div class="column">
-<center>
-<img src="membership_trial.jpg" alt="membership" style="width:60%" id="image1"></center>
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Membership trial</p></center>
-<center><p style="color: #4d4d33;font-size:15px">Experience the full membership benefits on your first purchase.</p></center>
-</div>
-</div>
-<div class="column">
-<center><img src="member.png" alt="member" style="width:60%;" id="image1"></center>
-<div class="text-block">
-  <br>
-<center><p style="color: #006666;font-weight:bold">Choose to be a member</p></center>
-<center><p style="color: #4d4d33;font-size:15px">Join the kipos community for $8.95 a month or $80 a year</p></center>
-</div>
-
-</div>
-</div>
-</div>
-<div class="container" id="container3">
-<h3 class="heading3">Reviews</h3>
-</div>
-<div class="container">
-<div class="row"  style="padding-left:15%;padding-right:15%">
-<div class="column">
-<img src="5-stars-rating.png" alt="rating" style="width:100%">
-<div class="text-block">
-  <br>
-  <center><p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p></center>
-  <center><p style="color: #4d4d33;font-size:13px">-Ariana B</p>
-</div>
-</div>
-<div class="column">
-<img src="5-stars-rating.png" alt="rating" style="width:100%">
-<div class="text-block">
-  <br>
-  <center><p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p></center>
-  <center><p style="color: #4d4d33;font-size:13px">-Ariana B</p>
-</div>
-</div>
-<div class="column">
-<img src="5-stars-rating.png" alt="rating" style="width:100%;">
-<div class="text-block">
-  <br>
-  <center><p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p></center>
-  <center><p style="color: #4d4d33;font-size:13px">-Ariana B</p>
-</div>
-</div>
-</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<div class="container-fluid" style="background-color:#d6d6c2">
   <div class="container" id="container3">
+    <h3 class="heading3">Mission Statement</h3>
     <div class="col-xs-12">
-    <div class="row">
-      <div class="col-xs-7 col-xs-offset-4_5" id="center12">Ready to get your Organic and healthy food <br>at discount rates?</div>
+      <div class="row">
+        <div class="col-xs-7 col-xs-offset-4_5" id="center11">A customer service driven ecosystem an a learning platform where customers can grow and develop their healthy healthy
+          lifestyle goals easily,affordably and sustainably.</div>
+      </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row" style="padding-left:15%;padding-right:15%">
+      <div class="column">
+        <img src="diapers_ss_img.jpg" alt="babies and kids" style="width:100%">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Babies and Kids</p>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <img src="pro07_00.jpg" alt="confectionary" style="width:100%">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Confectionary</p>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <img src="bottle.jpg" alt="household" style="width:100%;">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Household</p>
+          </center>
+        </div>
+      </div>
+    </div>
   </div>
-  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px;padding-top:2%;">
-<input  type="text" placeholder="or enter email address" name="search1">
-<button type="submit">GO</button>
-</form>
-<br>
-<center>
-<a class ="demo"href="#" target="_blank" style="color:#006666">Sign In</a>
-<a class="demo" href="#" target="_blank" style="padding-left:3%;color:#006666">Shop for Business</a>
-</center>
-<p class="para2">We guarantee 100% privacy! Your info will not be shared.</p>
-<br>
-<br>
-<br>
-</div>
-<div class="container-fluid" style="background-color:#33cccc">
-  <div class="container"><div class="row" style="padding-top:4%">
-  <div class="col-sm-8">
-  <div class="row">
-  <div class="col-sm-3"><h3 class="heading5">Company</h3>
-    <a class ="demo1"href="#" target="_blank" style="color: white">Products</a>
-  <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">How Kipos work</a>
-  <br>
-  <a class ="demo1"href="#" target="_blank"style="color: white">About Us</a>
-  <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">Join the team</a></div>
-  <div class="col-sm-3"><h3 class="heading5">Resources</h3>
-    <a class ="demo1"href="#" target="_blank" style="color: white">Contact Us</a>
-  <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">FAQ</a>
-  <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">In The Media</a>
+  <div class="container" id="container3">
+    <h3 class="heading3">How it works</h3>
   </div>
-  <div class="col-sm-3"><h3 class="heading5">Quick Links</h3>
-    <a class ="demo1"href="#" target="_blank" style="color: white">Terms and Conditions</a>
   <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">Return Policy</a>
+  <div class="container">
+    <div class="row" style="padding-left:15%;padding-right:15%">
+      <div class="column">
+        <center>
+          <img src="register.png" alt="register" style="width:60%" id="image1">
+        </center>
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Register for free</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:15px">Free to browse on the product catalog</p>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <center>
+          <img src="membership_trial.jpg" alt="membership" style="width:60%" id="image1">
+        </center>
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Membership trial</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:15px">Experience the full membership benefits on your first purchase.</p>
+          </center>
+        </div>
+      </div>
+      <div class="column">
+        <center>
+          <img src="member.png" alt="member" style="width:60%;" id="image1">
+        </center>
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #006666;font-weight:bold">Choose to be a member</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:15px">Join the kipos community for $8.95 a month or $80 a year</p>
+          </center>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="container" id="container3">
+    <h3 class="heading3">Reviews</h3>
+  </div>
+  <div class="container">
+    <div class="row" style="padding-left:15%;padding-right:15%">
+      <div class="column">
+        <img src="5-stars-rating.png" alt="rating" style="width:100%">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">-Ariana B</p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="5-stars-rating.png" alt="rating" style="width:100%">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">-Ariana B</p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="5-stars-rating.png" alt="rating" style="width:100%;">
+        <div class="text-block">
+          <br>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">I love Kipos so much! It saved me so much and money having to shop in regular grocery stores</p>
+          </center>
+          <center>
+            <p style="color: #4d4d33;font-size:13px">-Ariana B</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <br>
-  <a class ="demo1"href="#" target="_blank" style="color: white">Affiliates</a></div>
-  <div class="col-sm-3"><h3 class="heading5">Get Social</h3><a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-instagram"></a>
-</div>
-</div></div>
-  <div class="col-sm-4">
-  <div class="row" style="padding-top:12%">
-  <div class="col-sm-4"><img src="mastercard.png" alt="Trulli" width="75" height="50"></div>
-  <div class="col-sm-4"><img src="Visa_Logo.png" alt="Trulli" width="75" height="50"></div>
-  <div class="col-sm-4"><img src="american_express.png" alt="Trulli" width="75" height="50"></div>
-</div></div>
-</div></div>
-<br>
-<br>
-<br>
-<br>
-</div>
+  <br>
+  <br>
+  <br>
+  <div class="container-fluid" style="background-color:#d6d6c2">
+    <div class="container" id="container3">
+      <div class="col-xs-12">
+        <div class="row">
+          <div class="col-xs-7 col-xs-offset-4_5" id="center12">Ready to get your Organic and healthy food
+            <br>at discount rates?</div>
+        </div>
+      </div>
+    </div>
+    <form class="example" action="/action_page.php" style="margin:auto;max-width:300px;padding-top:2%;">
+      <input type="text" placeholder="or enter email address" name="search1">
+      <button type="submit">GO</button>
+    </form>
+    <br>
+    <center>
+      <a class="demo" href="#" target="_blank" style="color:#006666">Sign In</a>
+      <a class="demo" href="#" target="_blank" style="padding-left:3%;color:#006666">Shop for Business</a>
+    </center>
+    <p class="para2">We guarantee 100% privacy! Your info will not be shared.</p>
+    <br>
+    <br>
+    <br>
+  </div>
+  <div class="container-fluid" style="background-color:#33cccc">
+    <div class="container">
+      <div class="row" style="padding-top:4%">
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-3">
+              <h3 class="heading5">Company</h3>
+              <a class="demo1" href="#" target="_blank" style="color: white">Products</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">How Kipos work</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">About Us</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">Join the team</a>
+            </div>
+            <div class="col-sm-3">
+              <h3 class="heading5">Resources</h3>
+              <a class="demo1" href="#" target="_blank" style="color: white">Contact Us</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">FAQ</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">In The Media</a>
+            </div>
+            <div class="col-sm-3">
+              <h3 class="heading5">Quick Links</h3>
+              <a class="demo1" href="#" target="_blank" style="color: white">Terms and Conditions</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">Return Policy</a>
+              <br>
+              <a class="demo1" href="#" target="_blank" style="color: white">Affiliates</a>
+            </div>
+            <div class="col-sm-3">
+              <h3 class="heading5">Get Social</h3>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row" style="padding-top:12%">
+            <div class="col-sm-4">
+              <img src="mastercard.png" alt="Trulli" width="75" height="50">
+            </div>
+            <div class="col-sm-4">
+              <img src="Visa_Logo.png" alt="Trulli" width="75" height="50">
+            </div>
+            <div class="col-sm-4">
+              <img src="american_express.png" alt="Trulli" width="75" height="50">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
 </body>
 </html>
